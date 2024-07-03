@@ -1,0 +1,27 @@
+{
+    "@context": {
+        "id": "@id",
+        "type": "@type",
+        "@vocab": "http://schema.org/",
+        "birthDate": {
+            "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "ex": "http://example.com/"
+    },
+    "@graph": [
+        {
+            "id": "ex:john_smith",
+            "type": "Person",
+            "name": "John Smith",
+            "knows": "ex:jane_doe",
+            "birthDate": "1990-10-12",
+            "address": {
+                "type": "PostalAddress",
+                "addressLocality": "Detroit",
+                "addressRegion": "MI",
+                "postalCode": "48202",
+                "streetAddress": "123 Example St."
+            }
+        }
+    ]
+}
