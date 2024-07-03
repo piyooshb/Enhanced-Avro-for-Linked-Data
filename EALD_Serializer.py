@@ -2,6 +2,7 @@ import os
 import json
 import avro
 from avro.datafile import DataFileWriter
+from avro.io import DatumWriter
 
 
 '''
