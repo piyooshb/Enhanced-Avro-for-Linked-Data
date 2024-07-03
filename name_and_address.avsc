@@ -1,0 +1,26 @@
+{
+  "type": "record",
+  "name": "PersonEvent",
+  "namespace": "com.example",
+  "fields": [
+    {"name": "id", "type": "string"},
+    {"name": "type", "type": "string"},
+    {"name": "name", "type": "string"},
+    {"name": "knows", "type": "string"},
+    {"name": "birthDate", "type": "string"},
+    {
+      "name": "address",
+      "type": {
+        "type": "record",
+        "name": "PersonAddress",
+        "fields": [
+          {"name": "type", "type": "string"},
+          {"name": "addressLocality", "type": "string"},
+          {"name": "addressRegion", "type": "string"},
+          {"name": "postalCode", "type": "string"},
+          {"name": "streetAddress", "type": "string"}
+        ]
+      }
+    }
+  ]
+}
